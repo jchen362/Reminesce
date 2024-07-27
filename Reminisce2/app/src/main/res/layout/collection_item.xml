@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/collection_item"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="@drawable/black_box_xml"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/prizeImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/black_box_xml"
+        android:scaleType="fitCenter" />
+</LinearLayout>

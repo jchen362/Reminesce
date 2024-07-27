@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Navigation_drawer"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/username_nav"
+        android:layout_width="138dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/justanotherhandregular"
+        android:text="@string/Username"
+        android:textColor="@color/golden"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/claw_nav"
+        android:layout_width="390dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/justanotherhandregular"
+        android:text="@string/claw"
+        android:textColor="@color/golden"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/number_guesser_nav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_nav" />
+
+    <TextView
+        android:id="@+id/number_guesser_nav"
+        android:layout_width="390dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/justanotherhandregular"
+        android:text="@string/number_guesser"
+        android:textColor="@color/golden"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/collection_nav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/claw_nav" />
+
+    <TextView
+        android:id="@+id/collection_nav"
+        android:layout_width="392dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/justanotherhandregular"
+        android:text="@string/collection"
+        android:textColor="@color/golden"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_guesser_nav" />
+
+    <TextView
+        android:id="@+id/logout_nav"
+        android:layout_width="390dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/justanotherhandregular"
+        android:text="@string/logout"
+        android:textColor="@color/golden"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/collection_nav"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <ImageButton
+        android:id="@+id/hambergButtonCloser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_menu_24" />
+
+    <ImageButton
+        android:id="@+id/tutorial_nav"
+        android:layout_width="54dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="94dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foregroundTint="@color/golden"
+        android:scaleType="centerInside"
+        android:scaleX=".8"
+        android:scaleY=".8"
+        app:layout_constraintBottom_toTopOf="@+id/claw_nav"
+        app:layout_constraintEnd_toStartOf="@+id/hambergButtonCloser"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/questionmark"
+        app:tint="@color/golden" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

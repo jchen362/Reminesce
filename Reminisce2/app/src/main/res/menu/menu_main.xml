@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+<item
+        android:id="@+id/claw_button"
+        android:title="@string/claw"/>
+    <item
+        android:id="@+id/number_guesser_button"
+        android:title="@string/number_guesser"/>
+    <item
+        android:id="@+id/collection_button"
+        android:title="@string/collection"/>
+    <item
+        android:id="@+id/guess_history_button"
+        android:title="@string/guessing_history"/>
+</menu>

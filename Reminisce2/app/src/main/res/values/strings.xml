@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Reminisce</string>
+    <string name="signup">Sign Up</string>
+    <string name="loginLink"> <u>Login</u></string>
+    <string name="signupLink"> <u>Sign Up</u></string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+
+    <string name="money_start">0</string>
+    <string name="x50">x50</string>
+    <string name="x">X</string>
+
+    <string name="switchToLogin">Already have an account?</string>
+    <string name="switchToSignup">Dont have an account?</string>
+
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Create_Password">Create Password</string>
+    <string name="Confirm_Password">Confirm Password</string>
+
+    <string name="Invalid_Input">Invalid Input</string>
+    <string name="User_Not_Found">User Not Found</string>
+    <string name="storage">ABEFPWDSFRE</string>
+    <string name="action_settings">Settings</string>
+    <string name="claw">Claw</string>
+    <string name="number_guesser">Number Guesser</string>
+    <string name="collection">Collection</string>
+    <string name="guessing_history">Guessing History</string>
+
+    <string name="story">Welcome to Reminisce!</string>
+    <string name="story_it_seems">It seems you have lost your memory in some unfortunate stream of events…</string>
+    <string name="story_instruct">First, you will want to get currency by playing our number guesser game. Don’t worry if you aren’t a good guesser. You can still play the number guesser even if you run out of money.</string>
+    <string name="story_remember">Use the Claw machine to win memories to remember who you once were..</string>
+    <string name="remember">Return to Game</string>
+
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <string name="play_num_guesser"><u>Play Number Guesser </u></string>
+    <string name="guess_info">Guess a number 1–20 to win currency!</string>
+    <string name="question_mark"> <b>?</b> </string>
+    <string name="enter_guess">Enter Guess Here</string>
+    <string name="guess">Guess!</string>
+
+
+    <string name="Rarity_Level"><u>Very Rare: Nightmares</u></string>
+
+
+</resources>

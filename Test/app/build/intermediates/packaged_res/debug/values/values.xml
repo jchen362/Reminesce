@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="golden">#FEFFBF</color>
+    <color name="grey">#BEBEBE</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="Confirm_Password">Confirm Password</string>
+    <string name="Create_Password">Create Password</string>
+    <string name="Invalid_Input">Invalid Input</string>
+    <string name="Password">Password</string>
+    <string name="User_Not_Found">User Not Found</string>
+    <string name="Username">Username</string>
+    <string name="app_name">Reminisce</string>
+    <string name="login">Login</string>
+    <string name="loginLink"> <u>Login</u></string>
+    <string name="signup">Sign Up</string>
+    <string name="signupLink"> <u>Sign Up</u></string>
+    <string name="storage">ABEFPWDSFRE</string>
+    <string name="switchToLogin">Already have an account?</string>
+    <string name="switchToSignup">Dont have an account?</string>
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+    <style name="Base.Theme.Test" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Test" parent="Base.Theme.Test"/>
+</resources>

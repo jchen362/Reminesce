@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:onClick="goToClawScreen"
+    tools:context=".Tutorial">
+
+    <!-- Main content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Your main content here -->
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/black"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/hamburgerIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/Actionbar"
+            android:layout_alignParentStart="true"
+            android:background="#00000000"
+            android:contentDescription="@string/nav_open"
+            android:scaleX="2"
+            android:scaleY="2"
+            app:layout_constraintBottom_toBottomOf="@+id/Actionbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_menu_24" />
+
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="124dp"
+            android:layout_height="62dp"
+            android:layout_alignBottom="@+id/Actionbar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:contentDescription="@string/app_name"
+            android:fontFamily="@font/justanotherhandregular"
+            android:gravity="center|center_horizontal"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/golden"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Actionbar"
+            app:layout_constraintStart_toEndOf="@+id/hamburgerIcon"
+            app:layout_constraintTop_toTopOf="@+id/Actionbar"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/justanotherhandregular"
+            android:text="@string/money_start"
+            android:textColor="@color/golden"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Actionbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Actionbar" />
+
+        <ImageView
+            android:id="@+id/coin_topbar"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginEnd="12dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@+id/Actionbar"
+            app:layout_constraintEnd_toStartOf="@+id/money_text"
+            app:layout_constraintTop_toTopOf="@+id/Actionbar"
+            app:layout_constraintVertical_bias="0.484"
+            app:srcCompat="@drawable/coinart" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="353dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/lacquer"
+            android:text="@string/story"
+            android:textAlignment="center"
+            android:textColor="@color/golden"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_name_text" />
+
+        <TextView
+            android:id="@+id/app_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/kaushanscript"
+            android:text="@string/app_name"
+            android:textColor="@color/golden"
+            android:textSize="80sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Actionbar" />
+
+        <TextView
+            android:id="@+id/background"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:fontFamily="@font/lacquer"
+            android:text="@string/story_it_seems"
+            android:textAlignment="center"
+            android:textColor="@color/golden"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_name_text" />
+
+        <TextView
+            android:id="@+id/first_instruction"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/lacquer"
+            android:text="@string/story_instruct"
+            android:textAlignment="center"
+            android:textColor="@color/golden"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/background" />
+
+        <TextView
+            android:id="@+id/last_instruction"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/lacquer"
+            android:text="@string/story_remember"
+            android:textAlignment="center"
+            android:textColor="@color/golden"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first_instruction" />
+
+        <Button
+            android:id="@+id/return_button"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rectangle"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/lacquer"
+            android:text="@string/remember"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/last_instruction"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Drawer content -->
+    <LinearLayout
+        android:id="@+id/drawer_content"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <!-- Your drawer content here -->
+        <include layout="@layout/navigation" />
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

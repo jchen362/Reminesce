@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:theme="@style/Theme.AppCompat.NoActionBar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/header_bar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="#000000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/App_Name_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/justanotherhandregular"
+        android:text="@string/app_name"
+        android:textColor="@color/golden"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/header_bar"
+        app:layout_constraintEnd_toEndOf="@+id/header_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header_bar" />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/justanotherhandregular"
+        android:text="@string/login"
+        android:textColor="@color/golden"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_bar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/line_decor"
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_text" />
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/justanotherhandregular"
+        android:onClick="pressLogin"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/golden"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/switch_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/switch_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/justanotherhandregular"
+        android:text="@string/switchToSignup"
+        android:textColor="@color/golden"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/switch_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/justanotherhandregular"
+        android:onClick="switchToSignUp"
+        android:text="@string/signupLink"
+        android:textColor="@color/golden"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_text"
+        app:layout_constraintStart_toEndOf="@+id/switch_text"
+        app:layout_constraintTop_toTopOf="@+id/switch_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/username_box"
+        android:layout_width="216dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:fontFamily="@font/justanotherhandregular"
+        android:hint="@string/Username"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/golden"
+        android:textColorHint="@color/golden"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_text" />
+
+    <EditText
+        android:id="@+id/password_box"
+        android:layout_width="216dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:fontFamily="@font/justanotherhandregular"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/golden"
+        android:textColorHint="@color/golden"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_box" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

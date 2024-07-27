@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:background="@drawable/yellow_border">
+
+    <!-- Image -->
+
+    <!-- Text: "Very Rare: Nightmares" -->
+
+    <TextView
+        android:id="@+id/resultsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/justanotherhandregular"
+        android:gravity="center"
+        android:text="Results"
+        android:textColor="@color/golden"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Text: "example sentence" -->
+
+    <ImageView
+        android:id="@+id/memoryFrag"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_coins_text"
+        app:srcCompat="@drawable/coinart" />
+
+    <TextView
+        android:id="@+id/num_coins_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/memoryFrag"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/justanotherhandregular"
+        android:gravity="center"
+        android:text="@string/x"
+        android:textColor="@color/golden"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultsTitle" />
+
+    <TextView
+        android:id="@+id/num_away"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/justanotherhandregular"
+        android:gravity="center"
+        android:text="@string/x"
+        android:textColor="@color/golden"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memoryFrag" />
+
+    <TextView
+        android:id="@+id/guess_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/justanotherhandregular"
+        android:gravity="center"
+        android:text="@string/x"
+        android:textColor="@color/golden"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_away" />
+
+    <TextView
+        android:id="@+id/number_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/justanotherhandregular"
+        android:gravity="center"
+        android:text="@string/x"
+        android:textColor="@color/golden"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_away" />
+
+    <TextView
+        android:id="@+id/x_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:text="@string/x"
+        android:textColor="@color/golden"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
